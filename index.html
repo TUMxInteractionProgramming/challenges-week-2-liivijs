@@ -46,12 +46,15 @@
             /* #2 #font capital #letters */
             text-transform: uppercase;
         }
-
+        .container {
+            background-color: white;
+        }
 
         /*styles for channel area*/
-        h2 {
+        ul {
             /* #2 #colorful #channelandchat */
             background-color: white;
+            list-style-type: none;
         }
 
         /*styles for chat area*/
@@ -64,6 +67,9 @@
             /* #2 #font #locations need an extra element, we'll use strong for w3w locations */
             text-transform: uppercase;
         }
+        a {
+            color: black;
+        }
 
         h3 {
             /* #2 #font #metadata is now medium */
@@ -75,6 +81,9 @@
             font-size: larger;
             font-style: normal;
         }
+        .message-container {
+            width: 80%;
+        }
 
     </style>
 
@@ -84,20 +93,32 @@
 
 <!-- channel area -->
 <!-- #1 #channels #app-bar -->
-<h1>chatter|app</h1>
-
+<h1><img src="http://ip.lfe.mw.tum.de/sections/moocus.png" alt="moocus image" style="height: 56px;">chatter|app</h1>
 <!-- #1 #channels #topics -->
-<h2>#Yummy</h2>
-<h2>#SevenContinents</h2>
-<h2>#KillerApp</h2>
-<h2>#FirstPersonOnMars</h2>
-<h2>#Octoberfest</h2>
+<ul>
+    <li>
+        <h2>#Yummy <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="star image"></h2>
+    </li> 
+    <li>
+        <h2>#SevenContinents <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="empty star image"></h2>
+    </li>
+    <li>
+        <h2>#KillerApp <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="empty star image"></h2>
+    </li>
+    <li>
+        <h2>#FirstPersonOnMars <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="star image"></h2>
+    </li>   
+    <li>
+       <h2>#Octoberfest <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="star image"></h2> 
+    </li>
+</ul>
 
 <!-- #1 #channels #buttons -->
-<button>new</button>
-<button>trending</button>
-<button>favorites</button>
-
+<div class="container">
+    <button><img src="http://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb image">new</button>
+    <button><img src="http://ip.lfe.mw.tum.de/sections/fire.png" alt="fire image">trending</button>
+    <button><img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="star image">favorites</button>
+</div>
 
 <!-- chat area -->
 <!-- #1 #chat #name -->
@@ -110,9 +131,10 @@
 </h1>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message-container">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>cheeses.yard.applies</strong>
+    <a href="https://map.what3words.com/cheeses.yard.applies" target="_blank"><strong>cheeses.yard.applies</strong></a>
     Wed, June 20th, 13:37
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>15 min. left</em>
@@ -121,11 +143,12 @@
 <p>What's the place you folks call home?</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
+</div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message-container">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>truck.cotton.zone</strong>
+    <a href="https://map.what3words.com/truck.cotton.zone" target="_blank"><strong>truck.cotton.zone</strong></a>
     Wed, June 20th, 13:39
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>4 min. left</em>
@@ -134,11 +157,13 @@
 <p>BRISBANE! Hang loose!</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
+</div>
 
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message-container">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>thus.best.dishes</strong>
+    <a href="https://map.what3words.com/thus.best.dishes" target="_blank"><strong>thus.best.dishes</strong></a>
     Wed, June 20th, 14:02
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>12 min. left</em>
@@ -147,11 +172,12 @@
 <p>The big apple.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
+</div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message-container">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>driveway.helper.magazine</strong>
+    <a href="https://map.what3words.com/driveway.helper.magazine" target="_blank"><strong>driveway.helper.magazine</strong></a>
     Wed, June 20th, 14:02
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>7 min. left</em>
@@ -160,11 +186,12 @@
 <p>Eu sou um Carocas.</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
+</div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time -->
+<div class="message-container">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>escapes.pitch.saucepan</strong>
+    <a href="https://map.what3words.com/escapes.pitch.saucepan" target="_blank"><strong>escapes.pitch.saucepan</strong></a>
     Wed, June 20th, 14:07
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>14 min. left</em>
@@ -173,11 +200,12 @@
 <p>Greetings from the western cape!</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
+</div>
 <!-- #1 #chat #metadata contains location, weekday, day, and time  -->
+<div class="message-container">
 <h3>
     <!-- #2 #font #locations need an extra element, we'll use strong for w3w locations -->
-    <strong>meanings.identity.pays</strong>
+    <a href="https://map.what3words.com/meanings.identity.pays" target="_blank"><strong>meanings.identity.pays</strong></a>
     Wed, June 20th, 04:08
     <!-- #1 #chat #ttl lives inside the metadata -->
     <em>15 min. left</em>
@@ -186,6 +214,6 @@
 <p>北京</p>
 <!-- #1 #chat #button subsequent to each message -->
 <button>+5 min.</button>
-
+</div>
 </body>
 </html>
